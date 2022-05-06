@@ -17,6 +17,15 @@
         width: 18rem;
         background-color: beige
     }
+
+    .pagination {
+        display: flex
+    }
+
+    .page-item {
+        list-style: none;
+        margin: 0 0.3rem
+    }
 </style>
 <body>
     <div class="container">
@@ -47,7 +56,9 @@
         @endforeach
 
     </div>
-    {{ $data->links() }}
+    <div>
+        {{ $data->links() }}
+    </div>
 
 </body>
 </html>
