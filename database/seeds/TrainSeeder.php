@@ -13,7 +13,7 @@ class TrainSeeder extends Seeder
      */
     public function run(Faker $faker)
     {
-        for ($i = 1; $i < 500; $i++) {
+        for ($i = 1; $i <= 500; $i++) {
             $trainData = [
                 'azienda'               => $faker->company(),
                 'stazione_di_partenza'  => $faker->city(),

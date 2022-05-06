@@ -14,7 +14,11 @@ class TrainController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $trains = Train::paginate(50);
+        $data = [
+            'data' => $trains
+        ];
+        return view('home', $data);
     }
 
     /**
